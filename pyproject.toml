@@ -1,0 +1,19 @@
+[project]
+name = "verba"
+version = "0.1.0"
+description = "Terminal language drill"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+verba = "verba.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
